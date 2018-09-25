@@ -155,6 +155,16 @@ After the libraries install, the postinstall script will run `gulp` to invoke
 babel on the source. It is important to run `gulp` manually after updating any
 files in lib/ to update the versions in node/.
 
+## Deploying
+
+To deploy this package within a docker image build and push the image by
+running the command:
+
+```bash
+docker build -t registry.cr8.net/crate/slackin:latest .
+docker push registry.cr8.net/crate/slackin:latest
+```
+
 ## Credits
 
 - The SVG badge generation was taken from the
